@@ -1,0 +1,11 @@
+<h1>Usuarios</h1>
+<hr>
+
+<ul class="list-group">
+
+    <li class="list-group-item" *ngFor="let usuario of usuariosActivosOB |async">
+            {{usuario.nombre}}
+            <br>
+            <span class="bagde bagde-info">{{usuario.id}}</span>
+    </li>
+</ul>

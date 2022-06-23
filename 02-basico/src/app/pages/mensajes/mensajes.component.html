@@ -1,0 +1,21 @@
+<h1>Usuario: <small>{{wsService.Usuario.nombre | titlecase}}</small></h1>
+<div class="text-end">
+    <button class="btn btn-danger" (click)="salir()">Salir</button>
+</div>
+<hr>
+
+<div class="container">
+<div class="row ">
+
+    <div class="col-6">
+        <app-lista-usuarios></app-lista-usuarios>
+    </div>
+
+    <div class="col-6">
+        <app-chat></app-chat>
+    </div>
+</div>
+</div>
+
+
+<app-footer></app-footer>
